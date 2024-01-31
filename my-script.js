@@ -108,22 +108,54 @@
 // let kilomitersN = 20;
 // let milesN = 1.609344;
 
-// let calculate = kilomitersN / milesN; 
+// let calculate = kilomitersN / milesN;
 
 // console.log(`${calculate} ml`);
 
-let weight = 75;
-let heightInMeters = 1.75;
-let heightInCentimeters = heightInMeters;
+// let weight = 75;
+// let heightInMeters = 1.75;
+// let heightInCentimeters = heightInMeters;
 
-let bodyMassIndex = weight / (heightInCentimeters **2);
+// let bodyMassIndex = weight / (heightInCentimeters **2);
 
-console.log(Math.floor(bodyMassIndex));
+// console.log(Math.floor(bodyMassIndex));
 
+// let name = "Alaa"
+// if (name == "alaa") {
+//     console.log("true");
+// } else {
+//     console.log("false");
+// }
 
+// console.log(1 == true);
 
+// let height = prompt("Enter your height in cm")
+// if (height >= 120) {
+//     console.log("You can ride");
+// } else {
+//     console.log("Sorry, you are too short");
+// }
 
+// let number = prompt("Enter a number: ")
+// if ((number % 2 == 0)) {
+//     console.log("true");
+// } else {
+//     console.log("false");
+// }
 
-
+let height = prompt("Enter your height in a cm")
+if (height >= 120) {
+    console.log("You can ride");
+    let age = prompt("Enter your age")
+    if (age >= 18) {
+        console.log("90 SEK");
+    } else if (age >= 12) {
+        console.log("70 SEK");
+    } else {
+        console.log("50 SEK");
+    }
+} else {
+    console.log("Sorry, you are too short!");
+}
 
 
