@@ -143,19 +143,36 @@
 //     console.log("false");
 // }
 
-let height = prompt("Enter your height in a cm")
-if (height >= 120) {
-    console.log("You can ride");
-    let age = prompt("Enter your age")
-    if (age >= 18) {
-        console.log("90 SEK");
-    } else if (age >= 12) {
-        console.log("70 SEK");
-    } else {
-        console.log("50 SEK");
-    }
+// let height = prompt("Enter your height in a cm")
+// if (height >= 120) {
+//     console.log("You can ride");
+//     let age = prompt("Enter your age")
+//     if (age >= 18) {
+//         console.log("90 SEK");
+//     } else if (age >= 12) {
+//         console.log("70 SEK");
+//     } else {
+//         console.log("50 SEK");
+//     }
+// } else {
+//     console.log("Sorry, you are too short!");
+// }
+
+
+let weight = prompt("Enter your weight in kg")
+let heightInMeters = prompt("Enter your height in meters")
+let heightInCentimeters = heightInMeters;
+
+let bodyMassIndex = weight / (heightInCentimeters **2);
+
+if (bodyMassIndex < 18.5) {
+    console.log("Underweight");
+} else if (bodyMassIndex < 25) {
+    console.log("Normal weight");
+} else if (bodyMassIndex < 30) {
+    console.log("Slightly overweight");
+} else if (bodyMassIndex < 35) {
+    console.log("Obese");
 } else {
-    console.log("Sorry, you are too short!");
+    console.log("Clinically obese");
 }
-
-
