@@ -143,36 +143,75 @@
 //     console.log("false");
 // }
 
-// let height = prompt("Enter your height in a cm")
-// if (height >= 120) {
-//     console.log("You can ride");
-//     let age = prompt("Enter your age")
-//     if (age >= 18) {
-//         console.log("90 SEK");
-//     } else if (age >= 12) {
-//         console.log("70 SEK");
-//     } else {
-//         console.log("50 SEK");
-//     }
+
+// let weight = prompt("Enter your weight in kg")
+// let heightInMeters = prompt("Enter your height in meters")
+
+// let bodyMassIndex = weight / (heightInMeters **2);
+
+// if (bodyMassIndex < 18.5) {
+//     console.log("Underweight");
+// } else if (bodyMassIndex < 25) {
+//     console.log("Normal weight");
+// } else if (bodyMassIndex < 30) {
+//     console.log("Slightly overweight");
+// } else if (bodyMassIndex < 35) {
+//     console.log("Obese");
 // } else {
-//     console.log("Sorry, you are too short!");
+//     console.log("Clinically obese");
 // }
 
+ /* LESSION #7 */
 
-let weight = prompt("Enter your weight in kg")
-let heightInMeters = prompt("Enter your height in meters")
-let heightInCentimeters = heightInMeters;
+// let height = prompt("Enter your height in a cm")
 
-let bodyMassIndex = weight / (heightInCentimeters **2);
+// let totalPrice = 0;
 
-if (bodyMassIndex < 18.5) {
-    console.log("Underweight");
-} else if (bodyMassIndex < 25) {
-    console.log("Normal weight");
-} else if (bodyMassIndex < 30) {
-    console.log("Slightly overweight");
-} else if (bodyMassIndex < 35) {
-    console.log("Obese");
-} else {
-    console.log("Clinically obese");
+// if (height >= 120) {
+//     // console.log(`You can ride`);
+//     let age = prompt(`Enter your age`)
+//     if (age >= 18) {
+//         totalPrice = 90;
+//     } else if (age >= 12) {
+//         totalPrice = 70;
+//     } else {
+//         totalPrice = 50;
+//     };
+    
+//     let photo = prompt("Do you want a photo?");
+//     if (photo === "yes") {
+//         if (age < 65) {
+//             totalPrice += 25;
+//         }
+//         alert("The total price is " + totalPrice + "kr")
+    
+//     } else {
+//         console.log("Sorry, you are too short!");
+//     }
+// }
+
+let yourOrder = prompt("Which size pizza do you want? S, M or L").toLowerCase();
+let totalPrice = 0;
+
+if (yourOrder === "s") {
+    totalPrice = 15;
+} else if (yourOrder === "m") {
+    totalPrice = 20;
+} else if(yourOrder === "l") {
+    totalPrice = 25;
+} else (
+    alert("Sorry, you need to choose size of pizza! You have 3 size: S, M or L")
+)
+let addPepperoni = prompt("Do you want pepperoni for your pizza?").toLowerCase();
+if (yourOrder === "s" && addPepperoni === "yes") {
+    totalPrice += 2
+} else if (yourOrder === "m"  && addPepperoni === "yes") {
+    totalPrice += 3
+} else if (yourOrder === "l" && addPepperoni === "yes") {
+    totalPrice += 3
 }
+let addCheese = prompt("Do you want extra cheese for pizza, it's only 1$ extra!)").toLowerCase();
+if (addCheese === "yes") {
+    totalPrice +=1
+}
+alert("The total price of your order is a " + totalPrice + "$")
