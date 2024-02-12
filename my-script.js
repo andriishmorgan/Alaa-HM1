@@ -284,135 +284,170 @@
 
  /* ------ HM #8 ------ */
 
-alert('You are welcome to big game: "Infinity"');
+// alert('You are welcome to big game: "Infinity"');
 
-let startGame = prompt("If you want to continue this game - put here OK!").toLowerCase();
+// let startGame = prompt("If you want to continue this game - put here OK!").toLowerCase();
 
-if (startGame === "ok") {
-    alert("You're in the game. You are a brave person!");
+// if (startGame === "ok") {
+//     alert("You're in the game. You are a brave person!");
 
-    let earthElement;
-    do {
-        earthElement = prompt("Choice your number. You have choice from 1 to 4!");
-        earthElement = parseInt(earthElement);
-        if (earthElement >= 1 && earthElement <= 4) {
-            alert("Now there will be questions, you can choose only one answer: \n A, B or C!")
-                switch (earthElement)
-                {  
-                case 1:
-                    let question1 = prompt("Question about Earth: Which of the following is a natural satellite of the Earth? \n A) Mars \n B) The Moon \n C) Jupiter");
-                    question1 = question1.toUpperCase();
-                    if (question1 === "B") {
-                        console.log("Correct! The Moon is a natural satellite of the Earth.");
-                    } else {
-                        console.log("Incorrect answer. The Moon is a natural satellite of the Earth.\n" +
-                        "              --      --\n" +
-                        "            .:\"  | .:'\" |\n" +
-                        "          --  ___   ___  -\n" +
-                        "        /:.  /  .\\ /.  \\ .\\\n" +
-                        "       |:|. ;\\___/O\\___/  :|\n" +
-                        "       |:|. |  `__|__'  | .|\n" +
-                        "       |:|.  \\_,     ,_/  /\n" +
-                        "        \\______       |__/\n" +
-                        "         |:.           \\\n" +
-                        "        /.:,|  |        \\\n" +
-                        "       /.:,.|  |         \\\n" +
-                        "       |::.. \\_;_\\-;       |\n" +
-                        " _____|::..    .::|       |\n" +
-                        "/   ----,     .::/__,    /__,\n" +
-                        "\\_______|,...____;_;_|../_;_|\n");
-                    }
-                    break;
-                case 2:
-                    let question2 = prompt("Question about Water: What percentage of the Earth's surface is covered by water? \n A) 50% \n B) 70% \n C) 90%");
-                    question2 = question2.toUpperCase();
-                        if (question2 === "B") {
-                            console.log("Correct! Approximately 70% of the Earth's surface is covered by water.");
-                        } else {
-                            console.log(
-                                "██╗      ██████╗ ███████╗███████╗██████╗\n" +
-                                "██║     ██╔═══██╗██╔════╝██╔════╝██╔══██╗\n" +
-                                "██║     ██║   ██║███████╗█████╗  ██████╔╝\n" +
-                                "██║     ██║   ██║╚════██║██╔══╝  ██╔══██╗\n" +
-                                "███████╗╚██████╔╝███████║███████╗██║  ██║\n" +
-                                "╚══════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝\n\n" +
-                                "Incorrect answer. Approximately 70% of the Earth's surface is covered by water.");
-                        }
-                    break;
-                case 3:
-                    let question3 = prompt("Question about Fire: What is the main component of a fire that causes it to burn? \n A) Water \n B) Oxygen \n C) Carbon dioxide");
-                    question3 = question3.toUpperCase();
-                    if (question3 === "B") {
-                      console.log("Correct! Oxygen is the main component of a fire that causes it to burn.");
-                    } else {
-                        console.log(
-                         " \\                                 />\n" +
-                         " \\__+_____________________/\\/\\___/ /|\n" +
-                         " ()______________________      / /|/\\\n" +
-                         "             /0 0  ---- |----    /---\\\n" +
-                         "            |0 o 0 ----|| - \\ --|      \\\n" +
-                         "             \\0_0/____/ |    |  |\\      \\\n" +
-                         "                         \\__/__/  |      \\\n" +
-                         "Bang! Bang!                       |       \\\n" +
-                         "                                  |         \\\n" +
-                         "                                  |__________|\n\n" +
-                         "Incorrect answer. Oxygen is the main component of a fire that causes it to burn.");
-                    }
-                    break;
-                case 4:
-                    let question4 = prompt("Question about Air: Where is the highest place on Earth where you can breathe? \n A) Mount Everest \n B) The Dead Sea \n C) The Great Barrier Reef");
-                    question4 = question4.toUpperCase();
-                    if (question4 === "A") {
-                        console.log("Correct! Mount Everest is the highest place on Earth where you can breathe.");
-                    } else {
-                        console.log(
-                        "              (\n" +
-                        "               )\n" +
-                        "              (\n" +
-                        "        /\\  .-\"\"\"-.  /\\\n" +
-                        "       //\\\\/  ,,,  \\//\\\\\n" +
-                        "       |\\/| ,;;;;;, |\\/|\n" +
-                        "       //\\\\\\;-\"\"\"-;///\\\\\n" +
-                        "      //  \\/   .   \\/  \\\\\n" +
-                        "     (| ,-_| \\ | / |_-, |)\n" +
-                        "       //`__\\.-.-./__`\\\\\n" +
-                        "      // /.-(() ())-.\\\\ \\\n" +
-                        "     (\\ |)   '---'   (| /)\n" +
-                        "      ` (|           |) `\n" +
-                        "         \\)           (\n" +
-                        "\n" +
-                        "Incorrect answer. Mount Everest is the highest place on Earth where you can breathe.");
-                    }
-                    break;
-                }
-    } else {
-        alert("The number is incorrect. Please choose a number from 1 to 4.");
-    }
-    } while (!(earthElement >= 1 && earthElement <= 4));
-} else {
-    console.log("He who does not take risks does not win\n"
-               + "                       -           -\n"
-               + "                      -   -    \n"
-               + "                         -         -\n"
-               + "                     -       -  - \n"
-               + "                  ________._____________\n"
-               + "                  |   .                |\n"
-               + "                  |^^^.^^^^^.^^^^^^.^^^|\n"
-               + "                  |     .   .   .      |\n"
-               + "                   \\      . . . .     /\n"
-               + "C H E E R S !!!      \\     .  .     / \n"
-               + "                       \\    ..    / \n"
-               + "                         \\      / \n"
-               + "                           \\  / \n"
-               + "                            \\/ \n"
-               + "                            ||\n"
-               + "                            ||\n"
-               + "                            ||\n"
-               + "                            ||\n"
-               + "                            ||\n"
-               + "                            /\\\n"
-               + "                           /;;\\\n"
-               + "                      ==============");
-}
+//     let earthElement;
+//     do {
+//         earthElement = prompt("Choice your number. You have choice from 1 to 4!");
+//         earthElement = parseInt(earthElement);
+//         if (earthElement >= 1 && earthElement <= 4) {
+//             alert("Now there will be questions, you can choose only one answer: \n A, B or C!")
+//                 switch (earthElement)
+//                 {
+//                 case 1:
+//                     let question1 = prompt("Question about Earth: Which of the following is a natural satellite of the Earth? \n A) Mars \n B) The Moon \n C) Jupiter");
+//                     question1 = question1.toUpperCase();
+//                     if (question1 === "B") {
+//                         console.log("Correct! The Moon is a natural satellite of the Earth.");
+//                     } else {
+//                         console.log("Incorrect answer. The Moon is a natural satellite of the Earth.\n" +
+//                         "              --      --\n" +
+//                         "            .:\"  | .:'\" |\n" +
+//                         "          --  ___   ___  -\n" +
+//                         "        /:.  /  .\\ /.  \\ .\\\n" +
+//                         "       |:|. ;\\___/O\\___/  :|\n" +
+//                         "       |:|. |  `__|__'  | .|\n" +
+//                         "       |:|.  \\_,     ,_/  /\n" +
+//                         "        \\______       |__/\n" +
+//                         "         |:.           \\\n" +
+//                         "        /.:,|  |        \\\n" +
+//                         "       /.:,.|  |         \\\n" +
+//                         "       |::.. \\_;_\\-;       |\n" +
+//                         " _____|::..    .::|       |\n" +
+//                         "/   ----,     .::/__,    /__,\n" +
+//                         "\\_______|,...____;_;_|../_;_|\n");
+//                     }
+//                     break;
+//                 case 2:
+//                     let question2 = prompt("Question about Water: What percentage of the Earth's surface is covered by water? \n A) 50% \n B) 70% \n C) 90%");
+//                     question2 = question2.toUpperCase();
+//                         if (question2 === "B") {
+//                             console.log("Correct! Approximately 70% of the Earth's surface is covered by water.");
+//                         } else {
+//                             console.log(
+//                                 "██╗      ██████╗ ███████╗███████╗██████╗\n" +
+//                                 "██║     ██╔═══██╗██╔════╝██╔════╝██╔══██╗\n" +
+//                                 "██║     ██║   ██║███████╗█████╗  ██████╔╝\n" +
+//                                 "██║     ██║   ██║╚════██║██╔══╝  ██╔══██╗\n" +
+//                                 "███████╗╚██████╔╝███████║███████╗██║  ██║\n" +
+//                                 "╚══════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝\n\n" +
+//                                 "Incorrect answer. Approximately 70% of the Earth's surface is covered by water.");
+//                         }
+//                     break;
+//                 case 3:
+//                     let question3 = prompt("Question about Fire: What is the main component of a fire that causes it to burn? \n A) Water \n B) Oxygen \n C) Carbon dioxide");
+//                     question3 = question3.toUpperCase();
+//                     if (question3 === "B") {
+//                       console.log("Correct! Oxygen is the main component of a fire that causes it to burn.");
+//                     } else {
+//                         console.log(
+//                          " \\                                 />\n" +
+//                          " \\__+_____________________/\\/\\___/ /|\n" +
+//                          " ()______________________      / /|/\\\n" +
+//                          "             /0 0  ---- |----    /---\\\n" +
+//                          "            |0 o 0 ----|| - \\ --|      \\\n" +
+//                          "             \\0_0/____/ |    |  |\\      \\\n" +
+//                          "                         \\__/__/  |      \\\n" +
+//                          "Bang! Bang!                       |       \\\n" +
+//                          "                                  |         \\\n" +
+//                          "                                  |__________|\n\n" +
+//                          "Incorrect answer. Oxygen is the main component of a fire that causes it to burn.");
+//                     }
+//                     break;
+//                 case 4:
+//                     let question4 = prompt("Question about Air: Where is the highest place on Earth where you can breathe? \n A) Mount Everest \n B) The Dead Sea \n C) The Great Barrier Reef");
+//                     question4 = question4.toUpperCase();
+//                     if (question4 === "A") {
+//                         console.log("Correct! Mount Everest is the highest place on Earth where you can breathe.");
+//                     } else {
+//                         console.log(
+//                         "              (\n" +
+//                         "               )\n" +
+//                         "              (\n" +
+//                         "        /\\  .-\"\"\"-.  /\\\n" +
+//                         "       //\\\\/  ,,,  \\//\\\\\n" +
+//                         "       |\\/| ,;;;;;, |\\/|\n" +
+//                         "       //\\\\\\;-\"\"\"-;///\\\\\n" +
+//                         "      //  \\/   .   \\/  \\\\\n" +
+//                         "     (| ,-_| \\ | / |_-, |)\n" +
+//                         "       //`__\\.-.-./__`\\\\\n" +
+//                         "      // /.-(() ())-.\\\\ \\\n" +
+//                         "     (\\ |)   '---'   (| /)\n" +
+//                         "      ` (|           |) `\n" +
+//                         "         \\)           (\n" +
+//                         "\n" +
+//                         "Incorrect answer. Mount Everest is the highest place on Earth where you can breathe.");
+//                     }
+//                     break;
+//                 }
+//     } else {
+//         alert("The number is incorrect. Please choose a number from 1 to 4.");
+//     }
+//     } while (!(earthElement >= 1 && earthElement <= 4));
+// } else {
+//     console.log("He who does not take risks does not win\n"
+//                + "                       -           -\n"
+//                + "                      -   -    \n"
+//                + "                         -         -\n"
+//                + "                     -       -  - \n"
+//                + "                  ________._____________\n"
+//                + "                  |   .                |\n"
+//                + "                  |^^^.^^^^^.^^^^^^.^^^|\n"
+//                + "                  |     .   .   .      |\n"
+//                + "                   \\      . . . .     /\n"
+//                + "C H E E R S !!!      \\     .  .     / \n"
+//                + "                       \\    ..    / \n"
+//                + "                         \\      / \n"
+//                + "                           \\  / \n"
+//                + "                            \\/ \n"
+//                + "                            ||\n"
+//                + "                            ||\n"
+//                + "                            ||\n"
+//                + "                            ||\n"
+//                + "                            ||\n"
+//                + "                            /\\\n"
+//                + "                           /;;\\\n"
+//                + "                      ==============");
+// }
 
  /* ------ LESSION #9 ------ */
+
+// let age = 12;
+// age >= 18 ? console.log("You can drink wine") : console.log("You can drink water");
+
+// const drink = age >= 18 ? 'Wine' : 'Water';
+// console.log(drink);
+
+// 'use strict'
+
+// let hasDrivers = false;
+// const passTest = true;
+
+// if (passTest) hasDriver = true;
+// if (hasDrivers) console.log("I can drive");
+
+// let interface = "hello";
+ 
+function logger() {
+    console.log("My name is Andrew");
+}
+
+function fruiteProcessor(apples, oranges) { // parameters
+    // console.log(apples, oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges`
+    // console.log(juice);
+    return juice
+}
+const appleJuice = fruiteProcessor(1, 3)
+console.log(appleJuice);
+
+const orangeJuice = fruiteProcessor(2, 6)
+console.log(orangeJuice);
+
+/* ------ HM #9 ------ */
+ 
