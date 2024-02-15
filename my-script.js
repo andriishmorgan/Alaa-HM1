@@ -433,21 +433,87 @@
 
 // let interface = "hello";
  
-function logger() {
-    console.log("My name is Andrew");
-}
+// function logger() {
+//     console.log("My name is Andrew");
+// }
 
-function fruiteProcessor(apples, oranges) { // parameters
-    // console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges`
-    // console.log(juice);
-    return juice
-}
-const appleJuice = fruiteProcessor(1, 3)
-console.log(appleJuice);
+// function fruiteProcessor(apples, oranges) { // parameters
+//     // console.log(apples, oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges`
+//     // console.log(juice);
+//     return juice
+// }
+// const appleJuice = fruiteProcessor(1, 3)
+// console.log(appleJuice);
 
-const orangeJuice = fruiteProcessor(2, 6)
-console.log(orangeJuice);
+// const orangeJuice = fruiteProcessor(2, 6)
+// console.log(orangeJuice);
 
 /* ------ HM #9 ------ */
  
+ /* ------ LESSION #10 ------ */
+
+// function getSubstring(string) {
+//   return string.length
+// }
+// const userString = getSubstring("apple")
+// console.log(userString);
+
+// let userString = prompt("Enter a date here")
+// function userDateString (userString) {
+    
+// }
+
+/* ------ HM #10 ------ */
+
+function extractYear(dateString) {
+    const yearIndex = dateString.indexOf('-');
+    const year = dateString.substring(0, yearIndex);
+    return year;
+}
+
+const userInput = prompt("Enter the date in the format YYYY-MM-DD:");
+const truncatedInput = userInput.slice(0, 10);
+const year = extractYear(truncatedInput);
+console.log("Year:", year);
+
+
+
+
+function addNumber(a, b) {
+    return a + b;
+}
+
+function subtractNumber(a, b) {
+    return a - b;
+}
+
+function multiplyNumber(a, b) {
+    return a * b;
+}
+
+function divideNumber(a, b) {
+    return a / b;
+}
+
+function calculate(a, b, operator) {
+    switch (operator) {
+        case '+':
+            return addNumber(a, b);
+        case '-':
+            return subtractNumber(a, b);
+        case '*':
+            return multiplyNumber(a, b);
+        case '/':
+            return divideNumber(a, b);
+        default:
+            return "Unsupported operator";
+    }
+}
+const num1 = 10;
+const num2 = 5;
+const operator = '+';
+
+const result = calculate(num1, num2, operator);
+console.log("Result:", result);
+
