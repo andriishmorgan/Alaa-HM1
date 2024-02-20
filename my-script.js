@@ -466,54 +466,102 @@
 
 /* ------ HM #10 ------ */
 
-function extractYear(dateString) {
-    const yearIndex = dateString.indexOf('-');
-    const year = dateString.substring(0, yearIndex);
-    return year;
+// function extractYear(dateString) {
+//     const yearIndex = dateString.indexOf('-');
+//     const year = dateString.substring(0, yearIndex);
+//     return year;
+// }
+
+// const userInput = prompt("Enter the date in the format YYYY-MM-DD:");
+// const truncatedInput = userInput.slice(0, 10);
+// const year = extractYear(truncatedInput);
+// console.log("Year:", year);
+
+
+
+
+// function addNumber(a, b) {
+//     return a + b;
+// }
+
+// function subtractNumber(a, b) {
+//     return a - b;
+// }
+
+// function multiplyNumber(a, b) {
+//     return a * b;
+// }
+
+// function divideNumber(a, b) {
+//     return a / b;
+// }
+
+// function calculate(a, b, operator) {
+//     switch (operator) {
+//         case '+':
+//             return addNumber(a, b);
+//         case '-':
+//             return subtractNumber(a, b);
+//         case '*':
+//             return multiplyNumber(a, b);
+//         case '/':
+//             return divideNumber(a, b);
+//         default:
+//             return "Unsupported operator";
+//     }
+// }
+// const num1 = 10;
+// const num2 = 5;
+// const operator = '+';
+
+// const result = calculate(num1, num2, operator);
+// console.log("Result:", result);
+
+/* ------ LESSION #11 ------ */
+
+// const age1 = clacAge1(1985)
+ 
+// function clacAge1(birthYear) {
+//      return 2024 - birthYear;
+// }
+
+// const calcAge2 = function (birthYear) {
+//     return 2024 - birthYear
+// }
+
+// const age2 = calcAge2(1985)
+// console.log(age1, age2);
+
+// let randomNumber = Math.random() * 6;
+// console.log(randomNumber);
+
+// randomNumber = Math.floor(randomNumber) + 1
+// console.log(randomNumber);
+
+// let randomNumber = Math.floor(Math.random() * 6 + 1)
+// console.log(randomNumber);
+
+// let userInput = Math.floor(Math.random() * 100 + 1)
+// console.log(userInput);
+
+
+
+// guestList.push(name)
+// console.log(guestList);
+
+let guestList = ["Alaa", "Ola", "Tania", "Oksana", "Anna", "Andrew"]
+
+let name = prompt("What is your name? ")
+
+if (guestList.includes(name)) {
+    alert("You are welcome")
+} else {
+    alert ("Sorry, we dont know you")
 }
 
-const userInput = prompt("Enter the date in the format YYYY-MM-DD:");
-const truncatedInput = userInput.slice(0, 10);
-const year = extractYear(truncatedInput);
-console.log("Year:", year);
 
 
 
 
-function addNumber(a, b) {
-    return a + b;
-}
 
-function subtractNumber(a, b) {
-    return a - b;
-}
-
-function multiplyNumber(a, b) {
-    return a * b;
-}
-
-function divideNumber(a, b) {
-    return a / b;
-}
-
-function calculate(a, b, operator) {
-    switch (operator) {
-        case '+':
-            return addNumber(a, b);
-        case '-':
-            return subtractNumber(a, b);
-        case '*':
-            return multiplyNumber(a, b);
-        case '/':
-            return divideNumber(a, b);
-        default:
-            return "Unsupported operator";
-    }
-}
-const num1 = 10;
-const num2 = 5;
-const operator = '+';
-
-const result = calculate(num1, num2, operator);
-console.log("Result:", result);
 
