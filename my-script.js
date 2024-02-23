@@ -549,19 +549,70 @@
 // guestList.push(name)
 // console.log(guestList);
 
-let guestList = ["Alaa", "Ola", "Tania", "Oksana", "Anna", "Andrew"]
+// let guestList = ["Alaa", "Ola", "Tania", "Oksana", "Anna", "Andrew"]
 
-let name = prompt("What is your name? ")
+// let name = prompt("What is your name? ")
 
-if (guestList.includes(name)) {
-    alert("You are welcome")
-} else {
-    alert ("Sorry, we dont know you")
-}
+// if (guestList.includes(name)) {
+//     alert("You are welcome")
+// } else {
+//     alert ("Sorry, we dont know you")
+// }
 
+// let namesParticipants = prompt("Write the names of the participants here, separated by commas. Ex: Ola, Tania, Oksana...")
 
+// function randomName(names) {
+//     let randomIndex = Math.floor(Math.floor() * names.length)
+//     let choosenName = names[randomIndex];
+//     console.log(`Chosen name: ${choosenName}`);
+//     return choosenName
+// }
 
+// let names = [];
+// let currentName = '';
+// for (let i = 0; < namesParticipants.length; i++) {
+//     if (namesParticipants[i] === ',') {
+//         names.push(currentName);
+//         currentName = '';
+//     } else {
+//         currentName += namesParticipants
+//     }
+// }
 
+/* ------ LESSION #12 ------ */
 
+let animals = ["Cow", "Rabbit", "Rabbit", "Monkey"]
+// console.log(animals);
+animals.push("Cat")
+// console.log(animals);
 
+let animalsCopy = [...animals]
+// console.log(animalsCopy);
+// animals.push("Dog")
+
+// let count = 0;
+// animals.forEach( c => {
+//     console.log(c);
+//     if (c === "Rabbit") {
+//         count +=1
+//     }
+// });
+
+// console.log(count);
+
+// let deletedAnimals = animals.splice(3, 1, "Dog")
+// deletedAnimals.push("text")
+// console.log(animals);
+
+animals.pop("Rabbit")
+console.log("pop", animals);
+
+animals.splice(animals.indexOf("Rabbit"), 1)
+
+animals.shift()
+console.log(animals.sort());
+
+let numberList = [10, 12, 1, 4, 100, 200]
+console.log(Math.max(...numberList));
+console.log(Math.min(...numberList));
 
