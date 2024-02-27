@@ -581,12 +581,12 @@
 
 /* ------ LESSION #12 ------ */
 
-let animals = ["Cow", "Rabbit", "Rabbit", "Monkey"]
-// console.log(animals);
-animals.push("Cat")
-// console.log(animals);
+// let animals = ["Cow", "Rabbit", "Rabbit", "Monkey"]
+// // console.log(animals);
+// animals.push("Cat")
+// // console.log(animals);
 
-let animalsCopy = [...animals]
+// let animalsCopy = [...animals]
 // console.log(animalsCopy);
 // animals.push("Dog")
 
@@ -604,15 +604,51 @@ let animalsCopy = [...animals]
 // deletedAnimals.push("text")
 // console.log(animals);
 
-animals.pop("Rabbit")
-console.log("pop", animals);
+// animals.pop("Rabbit")
+// console.log("pop", animals);
 
-animals.splice(animals.indexOf("Rabbit"), 1)
+// animals.splice(animals.indexOf("Rabbit"), 1)
 
-animals.shift()
-console.log(animals.sort());
+// animals.shift()
+// console.log(animals.sort());
 
-let numberList = [10, 12, 1, 4, 100, 200]
-console.log(Math.max(...numberList));
-console.log(Math.min(...numberList));
+// let numberList = [10, 12, 1, 4, 100, 200]
+// console.log(Math.max(...numberList));
+// console.log(Math.min(...numberList));
 
+/* ------ HM #12 ------ */
+
+// let start = prompt("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scossors.")
+
+// if (start === "0" || start === "1" || start === "2") {
+//     alert("You choise: " + start)
+//     let randomNumber = (Math.floor(Math.random() * 3))
+//     alert ("Computer choise: " + randomNumber)
+//     if (start === randomNumber) {
+//         alert("TIE")
+//     } else if ((start === "0" && randomNumber === 2) || (start === "1" && randomNumber === "0") || (start === "2" && randomNumber === "1")) {
+//         alert("WIN")
+//     } else {
+//         alert ("LOSS")
+//     }
+// } else {
+//   alert("Please choose: 0, 1 or 2")
+// }
+
+/* ------ LESSION #13 ------ */
+
+// const names = ["Alaa", "Pasha", "Olha", "Anna", "Tania", "Andrew"]
+
+// for (let count; count < names.lenght; count ++) {
+//     console.log("Hello " + names[count])
+// }
+
+// let str = "Sweden"
+// console.log(str.length);
+
+// for (let count = 0; count < str.length; count++) {
+//     console.log(str[count])
+// }
+
+let list1 = ["Phil", "Oz", "Dre"];
+let list2 = [];
