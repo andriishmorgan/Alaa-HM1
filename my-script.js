@@ -652,3 +652,6 @@
 
 let list1 = ["Phil", "Oz", "Dre"];
 let list2 = [];
+
+let const userName = "Andrew"
+
