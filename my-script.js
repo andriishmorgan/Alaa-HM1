@@ -691,29 +691,62 @@
 // let numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 // let symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-let letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
-           'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
-           'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-let numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-let symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+// let letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+//            'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+//            'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+// let numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+// let symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-const mixArray = letters.concat(numbers, symbols);
+// const mixArray = letters.concat(numbers, symbols);
 
-function generateRandomString(length) {
-    let result = '';
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * mixArray.length);
-        result += mixArray[randomIndex];
-    }
-    return result;
+// function generateRandomString(length) {
+//     let result = '';
+//     for (let i = 0; i < length; i++) {
+//         const randomIndex = Math.floor(Math.random() * mixArray.length);
+//         result += mixArray[randomIndex];
+//     }
+//     return result;
+// }
+
+// const lettersCount = prompt("How many letters?");
+// const numbersCount = prompt("How many symbols?");
+// const symbolsCount = prompt("How many numbers?");
+
+// const randomString = generateRandomString(
+//     parseInt(lettersCount) + parseInt(numbersCount) + parseInt(symbolsCount)
+// );
+
+// console.log(randomString);
+
+/* ------ LESSION #15 ------ */
+
+/* ------ HM #15 ------ */
+
+// let student_scores = {
+//     "John": 85,
+//     "Alice": 95,
+//     "Bob": 70,
+//     "Emma": 75,
+//     "Tom": 88,
+// }
+// let student_grades = {
+ 
+// }
+
+// function greet_with(name, country) {
+//     console.log(`Hello ${name}`);
+//     console.log(`How is it like in ${country}`);
+// }
+
+// greet_with("Alaa", "Sweden")
+
+let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+            'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+let direction = prompt("Type 'encode' to encrypt, type 'decode' to decrypt: ")
+let text = prompt("Type your message: ").toLocaleLowerCase()
+let shift = prompt("Type the shift number: ")
+
+function encrypt(text, shift) {
+    
 }
-
-const lettersCount = prompt("How many letters?");
-const numbersCount = prompt("How many symbols?");
-const symbolsCount = prompt("How many numbers?");
-
-const randomString = generateRandomString(
-    parseInt(lettersCount) + parseInt(numbersCount) + parseInt(symbolsCount)
-);
-
-console.log(randomString);
