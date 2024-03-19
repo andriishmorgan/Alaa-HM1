@@ -740,13 +740,34 @@
 
 // greet_with("Alaa", "Sweden")
 
+/* ------ LESSION #17 ------ */
+
 let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
             'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 let direction = prompt("Type 'encode' to encrypt, type 'decode' to decrypt: ")
 let text = prompt("Type your message: ").toLocaleLowerCase()
-let shift = prompt("Type the shift number: ")
+let shift = parseInt(prompt("Type the shift number: "))
 
-function encrypt(text, shift) {
-    
+function encrypt(usertext, shiftAmmount, cipherDirection) {
+    let ciphertext = "";
+    if (cipherDirection === 'decode') {
+        shiftAmmount *= -1;
+    }
+
+    for (let i = 0; i < usertext.length; i++) {
+        let letter = usertext[i];
+        let position = alphabet.indexOf(letter);
+        let newPosition = (position + shiftAmmount) % 26;
+        if (newPosition < 0) {
+            newPosition += 26;
+        }
+        ciphertext += alphabet[newPosition];
+    }
+    return ciphertext
 }
+
+encrypt(text, shift, direction)
+
+let result = encrypt(text, shift, direction);
+console.log("Result:", result);
